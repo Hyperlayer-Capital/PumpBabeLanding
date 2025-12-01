@@ -1,0 +1,43 @@
+:root {
+  color-scheme: dark;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0b0c0f;
+  color: #fdfdfd;
+}
+.glass-card {
+  backdrop-filter: blur(24px);
+  background: rgba(9, 10, 13, 0.7);
+  border: 1px solid rgba(253, 253, 253, 0.08);
+  box-shadow: 0 20px 60px rgba(232, 81, 112, 0.2);
+}
+.pink-glow {
+  box-shadow: 0 0 60px rgba(232, 81, 112, 0.35);
+}
+.floating-bubble {
+  animation: float 8s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.hero-gradient {
+  background: radial-gradient(circle at top, rgba(232, 81, 112, 0.25), transparent 60%);
+}
+.qr-placeholder {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(253, 253, 253, 0.06) 0,
+    rgba(253, 253, 253, 0.06) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
